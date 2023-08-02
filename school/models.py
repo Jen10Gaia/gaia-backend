@@ -6,8 +6,8 @@ import geocoder
 import uuid
 import os
 
-from django.contrib.gis.db import models as gismodels
-from django.contrib.gis.geos import Point
+# from django.contrib.gis.db import models as gismodels
+# from django.contrib.gis.geos import Point
 
 from django.core.validators import MinValueValidator, MaxValueValidator
 
@@ -111,15 +111,15 @@ class School(models.Model):
 	def formatted_price(self):
 		return "{:,.2f}".format(self.price)
 
-	def geoCoder(self):
-		g = geocoder.mapquest(self.address, key=os.environ.get('GEOCODER_API'))
+	# def geoCoder(self):
+	# 	g = geocoder.mapquest(self.address, key=os.environ.get('GEOCODER_API'))
 
-		print(g)
+	# 	print(g)
 
-		lng = g.lng
-		lat = g.lat
+	# 	lng = g.lng
+	# 	lat = g.lat
 
-		self.point = Point(lng, lat)
+	# 	self.point = Point(lng, lat)
 
 
 class CandidatesApplied(models.Model):

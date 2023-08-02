@@ -53,7 +53,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'corsheaders',
     'storages',
-    'django.contrib.gis',
+    # 'django.contrib.gis',
     'django_filters',
 
     'account.apps.AccountConfig',
@@ -193,8 +193,8 @@ BACKEND_URL='http://localhost:8000'
 
 VIRTUAL_ENV_BASE = os.environ.get('VIRTUAL_ENV')
 
-GEOS_LIBRARY_PATH = VIRTUAL_ENV_BASE + '/Lib/site-packages/osgeo/geos_c.dll'
-GDAL_LIBRARY_PATH = VIRTUAL_ENV_BASE + '/Lib/site-packages/osgeo/gdal304.dll'
+# GEOS_LIBRARY_PATH = VIRTUAL_ENV_BASE + '/Lib/site-packages/osgeo/geos_c.dll'
+# GDAL_LIBRARY_PATH = VIRTUAL_ENV_BASE + '/Lib/site-packages/osgeo/gdal304.dll'
 
 
 AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
