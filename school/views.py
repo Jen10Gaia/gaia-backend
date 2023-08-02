@@ -25,10 +25,6 @@ from .models import School, CandidatesApplied, Status
 from .filters import SchoolsFilter
 from .serializers import SchoolSerializer, CandidatesAppliedSerializer
 
-
-stripe.api_key = settings.STRIPE_SECRET_KEY
-endpoint_secret = settings.STRIPE_WEBHOOK_SECRET
-
 # Create your views here.
 
 @api_view(['GET'])

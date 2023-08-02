@@ -27,10 +27,6 @@ from .filters import JobsFilter
 from .serializers import JobSerializer, CandidatesAppliedSerializer
 
 
-# This is your test secret API key.
-stripe.api_key = settings.STRIPE_SECRET_KEY
-endpoint_secret = settings.STRIPE_WEBHOOK_SECRET
-
 # Create your views here.
 @api_view(['GET'])
 def getAllJobs(request):
