@@ -30,7 +30,8 @@ dotenv.read_dotenv()
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY')
+# SECRET_KEY = os.environ.get('SECRET_KEY')
+SECRET_KEY = 'django-insecure-05ch27ue_$l+u_!olf$in_h+$=fok&)$fd^)^lt$au7-wm%9^z'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = os.environ.get('DEBUG') == 'True'
@@ -164,9 +165,7 @@ USE_I18N = True
 USE_TZ = True
 
 CORS_ALLOWED_ORIGINS = [
-    'https://frontend-five-drab.vercel.app',
-    'http://127.0.0.1:3000',
-    'http://localhost:3000',
+    '*'
 ]
 
 
