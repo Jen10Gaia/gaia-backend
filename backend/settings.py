@@ -181,7 +181,7 @@ CORS_ALLOWED_ORIGINS = [
 #     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 # ]
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
 #For production
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
@@ -189,7 +189,7 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 #For development
 # STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
-MEDIA_URL = 'media/'
+MEDIA_URL = '/media/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
