@@ -38,7 +38,7 @@ SECRET_KEY = 'django-insecure-05ch27ue_$l+u_!olf$in_h+$=fok&)$fd^)^lt$au7-wm%9^z
 DEBUG = False
 
 # ALLOWED_HOSTS = ['jobbee-django.herokuapp.com','127.0.0.1','localhost', ]
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['https://gaiaappbackend.onrender.com', '127.0.0.1', 'localhost',]
 
 
 # Application definition
@@ -165,7 +165,8 @@ USE_I18N = True
 USE_TZ = True
 
 CORS_ALLOWED_ORIGINS = [
-    'https://frontend-five-drab.vercel.app',
+    'https://globalaccessimmigrationagency.com',
+    'http://globalaccessimmigrationagency.com',
     'http://localhost:3000',
     'http://127.0.0.1:3000'
 ]
@@ -178,7 +179,7 @@ CORS_ALLOWED_ORIGINS = [
 STATICFILES_STORAGE = "django.contrib.staticfiles.storage.StaticFilesStorage"
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATIC_TMP = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATIC_URL = '/static/'
 
