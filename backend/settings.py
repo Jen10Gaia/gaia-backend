@@ -35,7 +35,7 @@ SECRET_KEY = 'django-insecure-05ch27ue_$l+u_!olf$in_h+$=fok&)$fd^)^lt$au7-wm%9^z
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # DEBUG = os.environ.get('DEBUG') == 'True'
-DEBUG = False
+DEBUG = True
 
 # ALLOWED_HOSTS = ['jobbee-django.herokuapp.com','127.0.0.1','localhost', ]
 ALLOWED_HOSTS = ['*']
@@ -167,7 +167,7 @@ CORS_ALLOWED_ORIGINS = [
     'https://globalaccessimmigrationagency.com',
     'http://globalaccessimmigrationagency.com',
     'http://localhost:3000',
-    'http://127.0.0.1:3000'
+    'http://127.0.0.1:3000',
 ]
 
 
@@ -181,12 +181,12 @@ CORS_ALLOWED_ORIGINS = [
 #     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
 # ]
 
+STATIC_URL = 'static/'
 
 #For production
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 #For development
-# STATIC_URL = 'static/'
 # STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
 MEDIA_URL = 'media/'
