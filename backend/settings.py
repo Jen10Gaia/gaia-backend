@@ -38,7 +38,7 @@ SECRET_KEY = 'django-insecure-05ch27ue_$l+u_!olf$in_h+$=fok&)$fd^)^lt$au7-wm%9^z
 DEBUG = False
 
 # ALLOWED_HOSTS = ['jobbee-django.herokuapp.com','127.0.0.1','localhost', ]
-ALLOWED_HOSTS = ['https://gaiaappbackend.onrender.com', '127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['gaiaappbackend.onrender.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
